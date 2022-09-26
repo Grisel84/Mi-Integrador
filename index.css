@@ -369,13 +369,13 @@ color: rgb(252, 252, 252);
 
 @media(max-width:1200px){
     #nuestros-productos{
-        height: 100vh;
+        height: 500vh;
 }
 }
 
 @media(max-width:1100px){
     #nuestros-productos{
-        height: 200vh;
+        height: 450vh;
 }
 }
 
