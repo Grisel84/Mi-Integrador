@@ -367,7 +367,7 @@ color: rgb(252, 252, 252);
       }
 }
 
-/*@media(max-width:1200px){
+@media(max-width:1200px){
     #nuestros-productos{
         height: 100vh;
 }
@@ -383,7 +383,7 @@ color: rgb(252, 252, 252);
     #nuestros-productos{
         height: 250vh;
 }
-}*/
+}
 
 
 
