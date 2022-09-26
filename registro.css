@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 1.5;
+}
+
+
+/*HEADER*/
+
+.header{
+    height: 60px;
+    width: 100%;
+    padding: 0px 50px;
+    background-image: linear-gradient(to top, rgba(93, 96, 102, 0.4) 0%, rgba(42, 120, 221, 0.8) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+
+.navbar{
+    display: flex;
+}
+
+.navbar i{
+    font-size: 30px;
+    display: none;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Logo{
+    height: 180%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 2px 5px;
+    border-radius: 20px;
+}
+
+/*RESPONSIVE HEADER*/
+
+@media (max-width: 775px){
+    .navbar ul{
+       background-image: linear-gradient(to top, #103b72 0%, #537895 100%);
+       width: 100%;
+       height: calc(100vh - 80px) ;
+       position: absolute;
+       top: 50px;
+       left: 0;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       transform: translateX(200%);
+       transition: all 0.5s ease-out;
+    }
+    .navbar i{
+       display: block;
+    }
+   
+    #toggle-menu:checked + .navbar-list{
+       transform: translateX(0);
+       transition: all 0.4s ease-in;
+    }
+   
+    .navbar-link{
+       color: white;
+    }
+   
+    }
+
+    body{
+        font-family: 'Raleway', sans-serif;
+        min-height: 600px;
+        padding: 80px 0;
+        background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+        background-color: #a3bded;
+        background-repeat: no-repeat;
+    
+        display: flex;
+    }
+    
+    .main{
+        margin: auto;
+        width: 90%;
+        max-width: 450px;
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.472), rgba(255, 255, 255, 0.365));
+        overflow: hidden;
+        padding: .7em;
+        border-radius: 1em;
+    
+        display: grid;
+        grid-auto-rows: max-content;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        gap: .6em;
+    
+        animation: mostrar 1.5s ease-in-out;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .link{
+        text-decoration: none;
+        color: #1a2537;
+        font-weight: 600;
+    }
+
+    
+    @keyframes mostrar {
+        0%{
+            opacity: 0;
+        }
+    
+        100%{
+            opacity: 1;
+        }
+    }
+    
+    .main__contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5em;
+        padding: 3em .5em;
+        text-align: center;
+    }
+    
+    .main__form{
+        display: grid;
+        justify-items: center;
+        gap: 1.5em;
+    }
+    
+    .main__input{
+        width: 80%;
+        max-width: 500px;
+        outline: none;
+        border: none;
+        padding: 1em;
+        font: inherit;
+        border-radius: .6em;
+    }
+    
+    .main__input--send{
+        background-color: #1f6ee4;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .main__title{
+        font-size: 2.3rem;
+    }
+    
+    .main__link:hover{
+        background-color: #fff;
+    }
+    
+    .main__icon{
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+
+
+
+
+
